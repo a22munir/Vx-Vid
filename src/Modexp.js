@@ -1,5 +1,7 @@
 import {Modal}  from 'react-bootstrap';
+import './Modexp.css';
 import React from 'react';
+import Record from './Record';
 
 export default class ModalExperiment extends React.Component {
 
@@ -31,10 +33,11 @@ export default class ModalExperiment extends React.Component {
           aria-labelledby="ModalHeader" className='modalClass'
           >
           <Modal.Header closeButton>
-            <Modal.Title id='ModalHeader'>A Title Goes here</Modal.Title>
+            <Modal.Title id='ModalHeader'>Record your video!</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>Some Content here</p>
+            <p>Recording functionality here</p> 
+            <Record/>
           </Modal.Body>
           <Modal.Footer>
             <button className='closeButton btn btn-primary' onClick={this.closeModal.bind(this)}>

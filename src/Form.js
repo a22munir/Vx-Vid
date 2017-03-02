@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './Form.css';
-import Modal from './modal';
-import ModalExample from './mod';
 import ModalExperiment from './Modexp';
+import Record from './Record';
 
 
 class Form extends Component {
@@ -11,9 +10,8 @@ class Form extends Component {
       <div className="container">
        <div className="row">
         <div className=".col-md-6 .offset-md-3" id="cont">
-          <p>You should enter our contest!</p>
+          <h1 className="text-primary">WANT TO BE FEATURED ON OUR SITE?</h1>
           <p>Just click the button below to record/upload your video!</p>
-
           <ModalExperiment/>
         </div>
       </div>
